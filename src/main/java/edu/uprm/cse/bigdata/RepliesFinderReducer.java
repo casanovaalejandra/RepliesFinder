@@ -14,7 +14,6 @@ public class RepliesFinderReducer extends  Reducer<Text,Text,Text,Text>{
         for (Text value : values ){
             replies += " "+value.toString();
         }
-
         // DEBUG
         context.write(key, new Text(replies));
     }
